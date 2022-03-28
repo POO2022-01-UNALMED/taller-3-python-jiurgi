@@ -47,12 +47,15 @@ class TV:
         if self._estado  and volumen >= 0 and volumen <= 7:
             self._volumen = volumen
   
+    @classmethod
+    def getNumTV(cls):
+        return cls._numTV
     
     @classmethod
     def setNumTV(cls, numTV):
         TV._numTV = numTV
     
-    # ----- OTROS -----
+
     def turnOn(self):
         self.estado = True
 
