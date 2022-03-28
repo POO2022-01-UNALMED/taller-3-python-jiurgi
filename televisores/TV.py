@@ -52,7 +52,6 @@ class TV:
         if self._estado  and volumen >= 0 and volumen <= 7:
             self._volumen = volumen
 
-    
     def turnOn(self):
         self._estado = True
 
