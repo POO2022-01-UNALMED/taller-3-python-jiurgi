@@ -58,8 +58,8 @@ class Control:
         if self._tv._estado and canal >= 1 and canal <= 120:
             self._tv._canal = canal
 
-    def getTV(self):
+    def getTv(self):
         return self._tv
 
-    def setTV(self, tv):
+    def setTv(self, tv):
         self._tv = tv
